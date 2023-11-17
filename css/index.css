@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 70px;
+}
+
+.banner{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( to bottom, rgb(0 0 0 / .75), rgb(0 0 0 / .75)), url(../Img/Banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-txt{
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    width: 700px;
+    height: 200px;
+    font-family: Pixel;
+}
