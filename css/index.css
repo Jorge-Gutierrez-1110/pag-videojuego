@@ -29,3 +29,55 @@ html{
     height: 200px;
     font-family: Pixel;
 }
+
+.caja-contenido{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: #242424 1px solid;
+    margin: 8px;
+    width: 550px;
+    height: 250px;
+}
+
+.tarjeta-dis{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    border: #242424 1px solid;
+    width: 550px;
+    height: 250px;
+}
+
+.txt-tarjeta{
+    width: 350px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.img-tarjeta{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-tarjeta img{
+    width: 70%;
+    height: 70%;
+}
