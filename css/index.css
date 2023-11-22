@@ -7,6 +7,7 @@
 html{
     scroll-behavior: smooth;
     scroll-padding: 70px;
+    background-color: #242424;
 }
 
 .banner{
@@ -15,7 +16,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient( to bottom, rgb(0 0 0 / .75), rgb(0 0 0 / .75)), url(img/banner.jpg);
+    background: linear-gradient( to bottom, rgb(0 0 0 / .75), rgb(0 0 0 / .75)), url(../img/banner.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -27,7 +28,6 @@ html{
     line-height: 30px;
     width: 700px;
     height: 200px;
-    font-family: Pixel;
 }
 
 .caja-contenido{
@@ -44,29 +44,33 @@ html{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: #242424 1px solid;
     margin: 8px;
     width: 450px;
     height: 250px;
-}
-
-.tarjeta-dis{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    border: #242424 1px solid;
-    width: 450px;
-    height: 250px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .txt-tarjeta{
+    display: flex;
+    flex-direction: column;
     width: 350px;
     height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 15px;
+    color: #fff;
+}
+
+.txt{
+    margin: 5px;
+}
+
+.fecha{
+    margin: 5px;
 }
 
 .img-tarjeta{
@@ -78,6 +82,7 @@ html{
 }
 
 .img-tarjeta img{
-    width: 65%;
+    width: 85%;
     height: 65%;
+    border-radius: 5px;
 }
